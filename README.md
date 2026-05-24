@@ -185,7 +185,7 @@ write_csv(dados, "dados/dados_renomeados.csv")
 ---
 
 # Autores
-Estephany Duarte, Emanuel Carneiro e Pedro Lucas
+
 Emanuel Carneiro
 
 Estephany Duar
