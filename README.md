@@ -182,6 +182,79 @@ funcionarios_ativos <- dados |>
 ```r
 write_csv(dados, "dados/dados_renomeados.csv")
 ```
----ores
+# Exercícios
+
+## Questão 1 — Importe o arquivo chamado `titanic` e faça uma verificação inicial do banco de dados.
+
+### Quantas variáveis numéricas e categóricas existem?
+
+```r
+library(readr
+dados <- read_csv("dados/titanic.csv")
+```
+
+```r
+library(tidyverse)
+glimpse(dados)
+```
+
+```r
+str(dados) # contagem manual
+```
+
+### Contagem das variáveis
+
+```r
+sum(sapply(dados, is.numeric))
+sum(sapply(dados, is.character)) 
+```
+---
+
+## Questão 2 — Renomeie a coluna `nome` para `nome_passageiro`
+
+### Função esperada
+
+```r
+dados |> 
+  rename(nome_passageiro = nome)
+```
+
+---
+
+## Questão 3 — Verifique a quantidade de valores ausentes (NA) em cada coluna e depois remova as linhas com valores faltantes
+
+### Funções esperadas
+
+```r
+colSums(is.na(dados))
+```
+
+```r
+dados_semNAs <- dados |> 
+  drop_na()
+```
+
+```r
+colSums(is.na(dados_semNAs))
+```
+
+---
+
+## Questão 4 — Crie uma nova variável chamada `coluna_zero` e preencha com o número zero
+
+```r
+dados <- dados |> 
+  mutate(coluna_zero = 0)
+```
+---
+
+## Questão 5 — A variável `classe` está se comportando como uma variável numérica (`dbl`). Transforme-a em uma variável categórica (`chr`)
+
+```r
+dados$classe <- as.character(dados$classe)
+glimpse(dados)
+```
+
+--- Autores
 Estephany Duarte
 Emanuel Carneiro
