@@ -184,6 +184,8 @@ write_csv(dados, "dados/dados_renomeados.csv")
 ```
 ---
 
-# Autora
+# Autores
+Estephany Duarte, Emanuel Carneiro e Pedro Lucas
+Emanuel Carneiro
 
-Estephany Duarte de Oliveira
+Estephany Duar
