@@ -46,6 +46,7 @@ dados_spss <- read_sav("dados/dados_de_funcionarios.sav")
 ```r
 glimpse(dados_funcionarios)
 str(dados_funcionarios)
+head(dados_funcionarios) # mostra as 6 primeira linhas do banco de dados
 ```
 
 ---
