@@ -182,10 +182,6 @@ funcionarios_ativos <- dados |>
 ```r
 write_csv(dados, "dados/dados_renomeados.csv")
 ```
----
-
-# Autores
-
+---ores
+Estephany Duarte
 Emanuel Carneiro
-
-Estephany Duar
