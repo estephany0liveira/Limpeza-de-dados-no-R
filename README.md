@@ -211,7 +211,7 @@ sum(sapply(dados, is.character))
 ```
 ---
 
-## Questão 2 — Renomeie a coluna `nome` para `nome_passageiro`
+## Questão 2 - Renomeie a coluna `nome` para `nome_passageiro`
 
 ### Função esperada
 
